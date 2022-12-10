@@ -99,3 +99,22 @@ a:link {
 #showHide, .psw {
     cursor: pointer;
 }
+
+.fixedMod {
+    position: fixed;
+    right: 10px;
+    bottom: 75px;
+    z-index:1000;
+    }
+
+.online-stat {
+    color: rgb(185, 240, 75);
+}
+
+#chatContainer {
+    height: 400px;
+}
+
+.fa-comments {
+    font-size: 3em;
+}
