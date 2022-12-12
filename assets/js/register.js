@@ -152,3 +152,10 @@
       return true
     }
   }
+
+function deleteItems() { 
+        sessionStorage.clear();
+        localStorage.clear();
+    
+}
+    
