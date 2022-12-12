@@ -104,8 +104,8 @@
       email = document.getElementById('email').value
       sessionStorage.setItem('email', email);
       sessionStorage.setItem('signInWithEmailAndPassword', JSON.stringify(auth));
-      window.location ="index.html";
-       // alert('User Logged In!!')
+      window.location ="logged.html";
+    
   
     })
     .catch(function(error) {
