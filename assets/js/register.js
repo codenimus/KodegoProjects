@@ -61,7 +61,7 @@
   
       // Push to Firebase Database
       database_ref.child('users/' + user.uid).set(user_data)
-      window.location.href = 'index.html';
+      window.location.href = 'logged.html';
      // alert('User Created!!')
     })
         .catch(function(error) {
