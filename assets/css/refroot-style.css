@@ -96,8 +96,15 @@ a:link {
     height: 75%;
 }
 
-#showHide, .psw {
+/* #showHide, .psw {
     cursor: pointer;
+} */
+
+.fa-eye {
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 11px;
 }
 
 .fixedMod {
