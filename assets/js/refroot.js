@@ -1,6 +1,6 @@
 // Show/Hide Password
 const loginPassword = document.getElementById("password");
-const showPasswordIcon = document.querySelector("i.fa-eye");
+const showPasswordIcon = document.querySelector("i.mata");
 
 showPasswordIcon.addEventListener('click', showPassword);
 
