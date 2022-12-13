@@ -28,12 +28,12 @@
     address = document.getElementById('address').value
   
     if (validate_email(email) == false || validate_password(password) == false) {
-      alert('Email or Password is Outta Line!!')
+      alert('Please enter email and password!')
       return
     
     }
     if (validate_field(fname) == false || validate_field(lname) == false || validate_field(mobile) == false) {
-      alert('One or More Extra Fields is Outta Line!!')
+      alert('Please fill required fields')
       return
     }
    
@@ -80,7 +80,7 @@
   
 
     if (validate_email(email) == false || validate_password(password) == false) {
-      alert('Check Email adn Password is correct')
+      alert('Check Email Password is incorrect')
       return
 
     }
@@ -94,7 +94,7 @@
       var date = new Date();
       var current_time = date.getHours()+":"+date.getMinutes();
       var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-        var user_data = {
+      var user_data = {
       last_login : current_date + ' ' + '/' + ' ' + current_time
     
       }
@@ -103,6 +103,7 @@
       database_ref.child('users/' + user.uid).update(user_data)
       email = document.getElementById('email').value
       sessionStorage.setItem('email', email);
+      localStorage.setItem('credentials', JSON.stringify(auth));
       sessionStorage.setItem('signInWithEmailAndPassword', JSON.stringify(auth));
       window.location ="index.html";
        // alert('User Logged In!!')
@@ -117,9 +118,7 @@
     })
   }
   
-  
-  
-  
+    
   // Validate Functions
   function validate_email(email) {
     expression = /^[^@]+@\w+(\.\w+)+\w$/
